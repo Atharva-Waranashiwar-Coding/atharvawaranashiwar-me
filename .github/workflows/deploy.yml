@@ -22,7 +22,9 @@ jobs:
         sudo mv hugo /usr/local/bin/
 
     - name: Build
-      run: hugo
+      run: |
+        hugo
+        echo "atharvawaranashiwar.me" > public/CNAME 
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
