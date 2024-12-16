@@ -1,0 +1,175 @@
+baseURL: "https://atharvawaranashiwar.me"
+languageCode: "en-us"
+title: "Atharva Waranashiwar"
+theme: "hugo-profile"
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menu (optional at the start)
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+
+params:
+  # Basic Site Params
+  title: "Atharva Waranashiwar"
+  description: "Software Engineer and MSIS student delivering scalable solutions."
+
+  # Navbar Configuration
+  navbar:
+    brandName: "Atharva Waranashiwar"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero Section
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Atharva Waranashiwar."
+    subtitle: "I build impactful software solutions."
+    content: "I'm a Software Engineer with a focus on backend development, cloud infrastructure, and scalable applications."
+    image: "/images/hero.jpg"
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "View My Resume"
+      url: "/files/resume.pdf"   # Link to the PDF in static/files
+      download: true             # Instructs browser to download the file
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: "https://github.com/Atharva-Waranashiwar-Coding"
+        - icon: fab fa-linkedin
+          url: "https://linkedin.com/in/atharvawaranashiwar"
+
+  # About Section
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.JPG"  # We'll add a placeholder image
+    content: |-
+      I am a Software Engineer experienced in building scalable web applications, optimizing backend APIs, and managing data-driven workflows. I focus on delivering efficient, maintainable solutions through technologies like FastAPI, Angular, and PostgreSQL.
+
+      Currently pursuing an MS in Information Systems, I am broadening my expertise in cloud computing, big data analytics, and modern software architectures. My goal is to continually leverage emerging technologies to solve complex challenges and drive impactful software development.
+      
+      **Programming Languages:** Python, JavaScript (ES6+), Java  
+      **Frontend:** React.js, Angular, HTML5/CSS3, TypeScript, Responsive Design  
+      **Backend & APIs:** FastAPI, Node.js, Express.js, RESTful APIs, Microservices  
+      **Databases:** PostgreSQL, MongoDB, SQLAlchemy, Data Modeling, Optimization  
+      **Cloud & DevOps:** AWS (EC2, VPC), GCP, Terraform (IaC), Docker, CI/CD (GitHub Actions)  
+      **Tools & Methods:** Git, GitHub, Bitbucket, VS Code, Agile/Scrum
+
+    skills:
+      enable: false
+
+  # Experience
+  experience:
+    enable: true
+    items:
+      - job: "Software Engineer"
+        company: "Persistent Systems"
+        companyUrl: "https://www.persistent.com"
+        date: "Aug 2021 - Sep 2023"
+        content: |-
+          - Spearheaded the design and development of a laboratory data directory web application using Angular for the frontend and FastAPI for the backend, significantly enhancing data accessibility and user engagement through an intuitive, interactive interface.
+          - Engineered RESTful APIs with FastAPI to manage real-time data retrieval and updates, facilitating efficient communication between the frontend and backend for seamless user experiences.
+          - Integrated SQLAlchemy ORM to streamline database interactions with PostgreSQL, effectively managing and processing millions of data entities while reducing code redundancy and improving data management efficiency.
+          - Optimized ORM queries and ensured scalability to handle large-scale datasets, enhancing application performance and improving data access speed, resulting in a smooth and responsive user interaction.
+      
+      - job: "Engineer Intern"
+        company: "Automate Engineering"
+        date: "Dec 2020 - Mar 2021"  
+        content: |-
+          - Designed an RFID-based smart billing system using Python and embedded systems, automating item scanning and billing processes, resulting in a 3-minute reduction in checkout time per transaction
+          - Handled a face mask detection model using machine learning algorithms in TensorFlow/Keras, achieving 87% accuracy by optimizing feature extraction and training techniques on a large image dataset
+          - Worked on a sign language recognition system leveraging computer vision and neural networks to detect hand gestures, enabling seamless communication for users and enhancing system accessibility
+          - Integrated hardware and software components, ensuring seamless data flow, improving real-time system performance across projects
+  
+  # Education
+  education:
+    enable: true
+    items:
+      - title: "MS in Information Systems"
+        school:
+          name: "Northeastern University"
+          url: "https://www.northeastern.edu"
+        date: "Expected Dec 2025"
+        content: "Focusing on backend development, cloud computing, and data management."
+      - title: "Bachelor of Engineering, Electronics and Telecommunication"
+        school:
+          name: "Pune University"
+          url: "https://www.unipune.ac.in"
+        date: "Jul 2021"
+        content: "Built a strong foundation in engineering principles and problem-solving."
+
+  # Projects
+  projects:
+    enable: true
+    items:
+      - title: "AI Sports Coach Feedback System"
+        content: "Secured 2nd place at the One Percent Athlete Hackathon by 10th Innings Ventures. This solution leverages AI to provide personalized fitness coaching, actionable feedback, and a performance tracking dashboard."
+        image: "/images/projects/ai-sports-coach.png"
+        featured:
+          name: "View Code"
+          link: "https://github.com/Atharva-Waranashiwar-Coding/one-percent-athlete-hackathon"
+        badges:
+          - "Next.js"
+          - "Firebase"
+          - "OpenAI API"
+
+      - title: "Recipe Hub"
+        content: "A platform for discovering, sharing, and saving recipes. Features intuitive UI, user authentication, and integrated backend services for storing and retrieving recipe data."
+        image: "/images/projects/recipehub-2.png"
+        featured:
+          name: "View Code"
+          link: "https://github.com/Atharva-Waranashiwar-Coding/RecipeHub"
+        badges:
+          - "React"
+          - "Node.js"
+          - "Express"
+          - "MongoDB"
+
+      - title: "Finance Tracker"
+        content: "A responsive web application enabling users to track income, expenses, and visualize spending patterns with dynamic charts and category-based insights."
+        image: "/images/projects/finance-tracker.png"
+        featured:
+          name: "View Code"
+          link: "https://github.com/Atharva-Waranashiwar-Coding/FinanceTracker"
+        badges:
+          - "React"
+          - "Tailwind CSS"
+          - "Firebase"
+          - "Chart.js"
+
+  # Contact
+  contact:
+    enable: true
+    content: "Feel free to reach out! I'm always open to discussing new opportunities."
+    btnName: "Email Me"
+    btnLink: "mailto:your.email@example.com"
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: "https://github.com/yourusername"
+      linkedin: "https://linkedin.com/in/yourusername"
