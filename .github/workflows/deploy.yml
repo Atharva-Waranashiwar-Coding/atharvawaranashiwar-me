@@ -32,4 +32,4 @@ jobs:
         github_token: ${{ secrets.TOKEN_GITHUB }}  # It's safer to use GITHUB_TOKEN which is automatically provided
         publish_dir: ./public
         publish_branch: gh-pages  # Ensure this is your GitHub Pages branch
-        keep_files: false  # Set to false to allow a clean deployment each time
+        keep_files: true  # Set to false to allow a clean deployment each time
