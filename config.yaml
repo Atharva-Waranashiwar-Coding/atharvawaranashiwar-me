@@ -165,11 +165,11 @@ params:
     enable: true
     content: "Feel free to reach out! I'm always open to discussing new opportunities."
     btnName: "Email Me"
-    btnLink: "mailto:your.email@example.com"
+    btnLink: "mailto:waranashiwaratharva@gmail.com"
 
   footer:
     recentPosts:
       enable: false
     socialNetworks:
-      github: "https://github.com/yourusername"
-      linkedin: "https://linkedin.com/in/yourusername"
+      github: "https://github.com/Atharva-Waranashiwar-Coding"
+      linkedin: "https://linkedin.com/in/atharvawaranashiwar"
